@@ -1,0 +1,59 @@
+@import "tool";
+//iview主题色变量，平台内请勿使用此列表中的变量
+@primary-color: #f36343; 
+@link-color: #f36343; 
+@link-hover-color: tint(@link-color, 20%);
+@link-active-color: shade(@link-color, 5%);
+@selected-color: fade(@primary-color, 90%);
+@btn-group-border: shade(@primary-color, 5%);
+@btn-primary-bg: @primary-color;
+@input-hover-border-color: @primary-color;
+@input-focus-border-color: @primary-color;
+@slider-color: tint(@primary-color, 20%);
+@border-color-base: #e0e1e2; //以上主题请勿在系统内使用
+/*----------系统主题-----------*/
+@baseThemeColor: #f36343; //主题色 
+@baseThemeHoverColor: shade(@baseThemeColor, 10%); //主题焦点色 
+@baseBorderColor: #e0e1e2; //边框颜色
+@baseFontColor: #444444; //字体颜色
+@baseShadow: 0 2px 6px rgba(0,0,0,0.1);//边框阴影
+/*----------按钮颜色-----------*/
+@ButtonBgColor: #6b6b6b; //背景色
+@ButtonBorderColor: #686868; //边框色
+@ButtonFontColor: #ffffff; //字体颜色
+/*----------标题字体----------*/
+@TitleFontColor: #222222;//颜色
+@TitleFontSize: 22px;//字体
+/*----------表格render函数----------*/
+.tableOperateBtnGroup{
+    color: @baseThemeColor;
+    .operateBtn{
+        padding: 0 10px;
+        cursor: pointer;
+        color: @baseThemeColor;
+    }
+    .disableBtn{//禁用
+        padding: 0 10px;
+        color:#aaaaaa;
+        cursor: default;
+    }
+    .tabBtn{
+        color: #aaaaaa;
+        padding:0 15px;
+        border: solid 1px @baseBorderColor;
+        border-radius: 14px;
+        line-height: 26px;
+        height: 26px;
+        box-sizing: border-box;
+        font-size:12px;
+        display: inline-block;
+        margin: 10px 10px 0px 0px;
+        // min-width:102px;
+    }
+}
+.tabBtnBox{
+    white-space: normal;
+    overflow: visible;
+    padding-bottom: 10px;
+}
+
